@@ -1,4 +1,6 @@
 pollutantmean <- function(directory, pollutant="sulfate", id=1:332){
+        # returns the mean of the pollutant in the selected ids.
+        # NAs are ignored
         list_files <- list.files(directory)
         
         sums <- 0

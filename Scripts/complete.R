@@ -1,6 +1,8 @@
 library(tidyverse)
 
 complete <- function(directory, id = 1:332){
+        # returns a dataframe with the `id` and correspondent number of completed rows ( when both `sulfate`
+        # and `nitrate` not NA values
         list_files <- list.files(directory)
         
         
